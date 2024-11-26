@@ -1,0 +1,92 @@
+.containerr {
+    display: flex; /* Sử dụng Flexbox để sắp xếp sidebar và nội dung */
+  }
+  
+  .sidebar {
+    width: 260px; /* Giữ nguyên chiều rộng cho sidebar */
+    height: 100vh; /* Đảm bảo sidebar cao bằng chiều cao viewport */
+    background-color: #f8f9fa; /* Màu nền cho sidebar */
+    border-right: 1px solid #e0e0e0; /* Đường viền bên phải */
+    display: flex; /* Để sử dụng flex cho nội dung bên trong */
+    flex-direction: column; /* Để xếp các phần tử theo chiều dọc */
+    justify-content: space-between; /* Giữ khoảng cách giữa các phần tử */
+    padding: 20px; /* Thêm khoảng cách cho sidebar */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Đổ bóng cho sidebar */
+  }
+  
+  .sidebar-header {
+    text-align: center; /* Canh giữa nội dung trong header */
+    padding-bottom: 20px; /* Thêm khoảng cách bên dưới */
+  }
+  
+  .sidebar-logo img {
+    width: 100px; /* Đặt chiều rộng cho logo */
+  }
+  
+  .sidebar h2 {
+    font-size: 1.5rem; /* Kích thước chữ cho tiêu đề */
+    color: #333; /* Màu chữ cho tiêu đề */
+    margin-top: 10px; /* Khoảng cách trên tiêu đề */
+  }
+  
+  .sidebar-menu {
+    list-style: none; /* Bỏ dấu đầu dòng */
+    padding: 0; /* Bỏ padding */
+  }
+  
+  .sidebar-item {
+    margin-bottom: 15px; /* Khoảng cách giữa các item */
+  }
+  
+  .sidebar-link {
+    display: flex; /* Sử dụng flex để căn chỉnh nội dung */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    text-decoration: none; /* Bỏ gạch chân */
+    font-size: 1rem; /* Kích thước chữ cho link */
+    color: #333; /* Màu chữ cho link */
+    padding: 10px 15px; /* Khoảng cách cho link */
+    border-radius: 8px; /* Bo tròn góc */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi hover */
+  }
+  
+  .sidebar-link i {
+    margin-right: 10px; /* Khoảng cách giữa biểu tượng và chữ */
+    font-size: 1.2rem; /* Kích thước biểu tượng */
+  }
+  
+  .sidebar-link:hover {
+    background-color: #e9ecef; /* Màu nền khi hover */
+  }
+  
+  .sidebar-footer {
+    padding-top: 20px; /* Khoảng cách trên footer */
+    border-top: 1px solid #e0e0e0; /* Đường viền trên footer */
+    text-align: center; /* Canh giữa nội dung trong footer */
+  }
+  
+  .sidebar-logout {
+    display: flex; /* Sử dụng flex để căn chỉnh nội dung */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    text-decoration: none; /* Bỏ gạch chân */
+    font-size: 1rem; /* Kích thước chữ cho logout */
+    color: #dc3545; /* Màu chữ cho logout */
+    padding: 10px 15px; /* Khoảng cách cho logout */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi hover */
+  }
+  
+  .sidebar-logout:hover {
+    background-color: #f8d7da; /* Màu nền khi hover */
+  }
+  
+  .sidebar-logout i {
+    margin-right: 10px; /* Khoảng cách giữa biểu tượng và chữ */
+    font-size: 1.2rem; /* Kích thước biểu tượng */
+  }
+  
+  .content {
+    flex-grow: 1; /* Nội dung sẽ chiếm phần còn lại */
+    padding: 20px; /* Thêm khoảng cách cho nội dung */
+    background-color: #ffffff; /* Màu nền cho nội dung */
+    min-height: 100vh; /* Đảm bảo nội dung không nhỏ hơn chiều cao của viewport */
+  }
+  
